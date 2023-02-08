@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&family=Rubik:wght@600&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway';
+    hyphens: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+/* <------ Header Nac Section ------> */
+header {
+    /* min-height: 100vh; */
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);    
+    width: 100%;
+    height: 5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1160px;
+    height: 5em;
+    margin: 0 auto;
+}
+
+.nav-logo a {
+    color: black;
+}
+
+.nav-logo a:hover {
+    color: #FF4C09;
+}
+
+#nav-menu #hamitems a {
+    font-size: 1.2em;
+    padding: 0;
+    margin-left: 1em;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav-menu #hamitems a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 0%;
+    border-bottom: 3px solid #FF4C09;
+    transition: 0.3s;
+}
+
+#nav-menu #hamitems a:hover:after {
+    width: 100%;
+}
+
+#toggle {
+    display: none;
+}
+
+  
+/* ------ Main ------ */
+
+.cover {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.cover-title-container {
+    font-family: 'Quicksand';
+    position: absolute;
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: left;
+    top: 25em;
+    left: 0;
+    right: 0;
+}
+
+.cover .cover-title-container h1 {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+.cover .cover-title-container h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.cover-img {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------ Services ------ */
+
+.services {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+}
+
+.services-container {
+    font-family: 'Raleway';
+    height: 100vh;
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto ;
+    display: flex;  
+    align-items: center;
+}
+
+.services .left-container {
+    margin: 0 30px 0 0;
+    width: 50%;
+    height: 75vh;
+}
+
+.services .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.services .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.services .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.services .left-container .services-icon {
+    display: flex;
+    margin: 20px 0;
+}
+
+.icon1, .icon2, .icon3 {
+    justify-content: center;
+    margin: 10px 10px;
+    width: 30%;
+
+} 
+
+.services .left-container .services-text {
+    margin: 20px 0;
+    font-size: 19px;
+}
+
+.ion-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.services .right-container {
+    margin: 0 0 0 30px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+.services .right-container .services-img {
+    width:  350px;
+    height: auto;
+}
+
+.desktop1 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.desktop2 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+/* ------ History ------ */
+
+.history {
+    width: 100%;
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2); 
+    margin: 0 auto;
+}
+
+.history-container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    font-family: 'Raleway';
+    height: 100vh;
+    display: flex;  
+    align-items: center;
+}
+
+.history-image {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history .left-container {
+    margin: 0 30px 0 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+.history .right-container {
+    margin: 0 0 0 30px;
+    width: 50%;
+    height: 75vh;
+}
+
+.history .right-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.history .right-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.history .right-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.history .right-container .history-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+/* ------ About ------ */
+
+.about {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1160px;
+    height: 100vh;
+    margin: 0 auto ;
+    display: flex;  
+    align-items: center;
+}
+
+.about-image {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .left-container {
+    margin: 0 30px 0 0;
+    width: 50%;
+    height: 75vh;
+}
+
+
+.about .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.about .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.about .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.about .left-container .about-text {
+    text-align: right;
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+.about .right-container {
+    margin: 0 0 0 30px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+/* ------ Works ------ */
+
+.works {
+    width: 100%;
+    height: 150vh;
+    display: flex;  
+    align-items: center;
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+}
+
+.works-container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: block;  
+    align-items: center;
+}
+
+.works-top-container {
+    height: 40vh;
+    margin: 0 0 30px 0;
+    display: flex;
+}
+
+.works .left-container {
+    margin: 0 30px 0 0;
+    width: 50%;
+}
+
+
+.works .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.works .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.works .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.works .left-container .works-text {
+    text-align: right;
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+
+.works .right-container {
+    margin: 0 0 0 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.works-img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.works-middle-container {
+    height: 35vh;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.img-cont {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.works-bottom-container {
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.works-img2 {
+    width:  80%;
+    height: 100%;
+    top: 5px;
+    object-fit: cover;
+}
+
+.works-img3 {
+    width:  50%;
+    height: 100%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.works-img4 {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ------ Vison & Mission ------ */
+
+.vision {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+    margin: 0 auto;
+    
+}
+
+.vision-container {
+    width: 90%;
+    max-width: 1160px;
+    font-family: 'Raleway';
+    height: 100vh;
+    margin: 0 auto ;
+    display: flex;  
+    align-items: center;
+}
+
+
+.vision .left-container {
+    margin: 0 30px 0 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 75vh;
+}
+
+
+.vision-image1 {
+    width: 50%;
+    height: 85%;
+    object-fit: cover;
+    margin: 0 30px 0 0;
+}
+.vision-image2 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision .right-container {
+    margin: 0 0 0 30px;
+    width: 30%;
+    height: 75vh;
+}
+
+.vision .right-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.vision .right-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.vision .right-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.vision .right-container .vision-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+/* ------ Contact ------ */
+
+
+.contact {
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+    width: 100%;
+    font-family: 'Raleway';
+    height: 50vh;
+    display: flex;  
+}
+
+.contact-container {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    max-width: 1160px;
+}
+
+.contact .left-container{
+    margin: 0 30px 0 0;
+    display: flex;
+    justify-content: right;
+    width: 30%;
+}
+.contact .right-container{
+    margin: 0 0 0 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.contact .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.contact .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.contact .right-container .contact-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Quicksand";
+    color: #FF4C09;
+}
+
+a:hover {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    font-size: 18px;
+    background-color: black;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1160px;
+    color: white;
+}
+
+footer a {
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+@media only screen and (max-width: 1300px) {
+        /* ------ Services ------ */
+    .services-container {
+        height: 50vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+
+    }
+
+    .services .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 60vh;
+
+    }
+
+    .services .right-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 30vh;
+    }
+
+    .services .right-container .services-img {
+        width:  100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .desktop1 {
+        display: none;
+    }
+
+    .desktop2 {
+        display: none;
+    }
+    /* ------ History ------ */
+
+    .history-container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5%;
+        height: 100vh;
+        display: block;  
+        align-items: center;
+    }
+
+    .history-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .history .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    .history .right-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    /* ------ About ------ */
+
+    .about-container {
+        width: 90%;
+        max-width: 1160px;
+        height: 125vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+    }
+
+    .about-image {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    .about .right-container {
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 90%;
+        height: 65vh;
+    }
+
+    /* ------ Works ------ */
+
+    .works {
+        padding-top: 100px;
+        width: 100%;
+        height: 140vh;
+        display: block;  
+    }
+
+    .works .right-container {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    /* <------ Header Nac Section ------> */
+    #nav-menu {
+        width: 10em;
+        z-index: 3;
+    }
+    
+    #hamitems {
+        position: absolute;
+        background-color: white;
+        border-radius: 5%;
+        width: 10em;
+        height: 14em;
+
+    }
+
+    #hamitems a {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        right: 1em;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+        text-align: left;
+
+    }
+
+    #nav-menu #hamitems a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 0%;
+        border-bottom: 3px solid #FF4C09;
+        transition: 0.3s;
+    }
+    
+    #nav-menu #hamitems a:hover:after {
+        width: 50%;
+    }
+
+    
+    #nav-menu label { 
+        display: flex; 
+        justify-content: right;
+        color: black;
+        background: white;
+        font-style: normal;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    #toggle {
+        display: none;
+    }
+
+    #hamitems { display: none; }
+    #nav-menu input:checked ~ #hamitems { 
+        display: block;
+    }
+    
+    /* ------ Services ------ */
+    .services-container {
+        height: 55vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+    }
+    
+    /* ------ About ------ */
+    
+    .about .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 55vh;
+    }
+    
+    /* ------ Works ------ */
+    
+    .works {
+        padding-top: 100px;
+        width: 100%;
+        height: 140vh;
+        display: block;  
+    }
+    
+    .works .right-container {
+        margin: 0 auto;
+    }
+    
+    .works-top-container {
+        height: 50vh;
+    }
+    
+    .works-bottom-container {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* ------ Main ------ */
+
+    .cover {
+        position: relative;
+        text-align: left;
+    }
+
+    .cover-title-container {
+        font-family: 'Quicksand';
+        position: absolute;
+        left: 0;
+        top: 33%;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* ------ Services ------ */
+
+    .services-container {
+        height: 65vh;
+        width: 90%;
+        display: block;  
+        align-items: center;
+    }
+
+
+    .icon1, .icon2, .icon3 {
+        display: none;
+    } 
+
+    .services .left-container .services-text {
+        margin: auto;
+        font-size: 19px;
+    }
+
+    /* ------ History ------ */
+
+    .history-container {
+        height: 100vh;
+        display: block;  
+        align-items: center;
+    }
+
+    .history-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .history .left-container {
+        width: 100%;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .history .right-container {
+        margin: auto;
+        width: 100%;
+        height: 70vh;
+    }
+
+
+    /* ------ About ------ */
+
+    .about-container {
+        height: 100vh;
+        margin: 0 auto ;
+        margin-bottom: 50px;
+        display: block; 
+    }
+
+    .about-image {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .left-container {
+        margin: 0 30px 0 0;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .about .right-container {
+        margin: auto;
+        width: 100%;
+        height: 30vh;
+    }
+
+    /* ------ Works ------ */
+
+    .works {
+        height: 130vh;
+    }
+
+    .works-top-container {
+        height: 40vh;
+        margin: 0 0 30px 0;
+        display: flex;
+    }
+
+    .works .left-container {
+        margin: 0 30px 0 0;
+        width: 100%;
+    }
+    .works .right-container {
+        display: none;
+    }
+
+    .works-bottom-container {
+        height: 40vh;
+    }
+
+    /* ------ Vison & Mission ------ */
+
+
+    .vision-container {
+        height: 50vh;
+        display: block;  
+    }
+
+
+    .vision .left-container {
+        display: none;
+    }
+
+    .vision .right-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+
+    /* ------ Contact ------ */
+
+
+    .contact {
+        height: 80vh;
+    }
+
+    .contact-container {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact .left-container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact .right-container{
+        margin: 0 auto;
+        width: 100%;
+    }
+};
